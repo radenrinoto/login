@@ -6,6 +6,7 @@
     overflow: scroll;
     margin-top: 4rem;
     box-shadow: none;
+    max-width: 100%;
   }
   #login-page {
     background-color: white;
