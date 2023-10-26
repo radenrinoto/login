@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bgColor: #355b3e;
+    --secondColor: #dbcfb3;
+    --btnLogin: #188c45;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.bg-army {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bgColor);
+}
+
+.container {
+    width: 70%;
+    height: 400px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: var(--secondColor);
+    display: flex;
+    overflow: hidden;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.login {
+    max-width: 40%;
+    background: white;
+    padding: 30px;
+    overflow: hidden;
+
+}
+
+.login h2 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: 600;
+    color: var(--bgColor);
+    margin-bottom: 0.8rem;
+}
+
+.login p {
+    font-size: 0.7em;
+    list-style: 0.7rem;
+    font-weight: 400;
+    color: #58745E;
+    margin-bottom: 0.8rem;
+}
+
+.logo {
+    display: flex;
+    margin-bottom: 0.9rem;
+}
+
+.logo h3 {
+    color: var(--bgColor);
+    padding: 5px 0 0 10px;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-weight: 500;
+    padding: 5px;
+    font-size: 0.9rem;
+}
+
+
+
+.form > input {
+    padding: 0.4rem;
+    border-radius: 5px;
+    border-color: #355b3e;
+    border-width: 1px;
+    width: 100%;
+}
+
+.form-helper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.email-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-weight: 500;
+    padding: 5px;
+    font-size: 0.9rem;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-weight: 500;
+    padding: 5px;
+    font-size: 0.9rem;
+}
+
+/* .password-container > label {
+    color: black;
+    border: 3px solid black;
+} */
+
+.password-container > img {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 55%;
+}
+
+.checkbox-container {
+    display: flex;
+    gap: 1rem;
+    color: var(--bgColor);
+    justify-content: space-between;
+}
+
+.checkbox-container label {
+    font-size: 0.7rem;
+}
+
+
+.checkbox {
+    accent-color: var(--bgColor);
+}
+
+
+.forgot-pass a{
+    font-size: 0.7rem;
+    color: var(--bgColor);
+}
+
+.show-password {
+    position: relative;
+    right: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+.button-container > button {
+    padding: 0.6rem;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login-button {
+    background-color: var(--btnLogin);
+    color: white;
+}
+.login-button:hover {
+    background-color: var(--bgColor);
+}
+.signup-button {
+    background-color: transparent;
+    border: 1px solid;
+    font-weight: 600;
+}
+.signup-button:hover {
+    background-color: #387e67;
+    color: white;
+}
+
+.form-footer {
+    display: flex;
+    gap: 1rem;
+}
+.form-footer > a {
+    text-decoration: none;
+    font-weight: 600;
+}
+.form-footer > span {
+    font-size: 0.8rem;
+    color: #58745e;
+}
+
+.sosmed{
+    display: flex;
+    gap: 1rem;
+    font-size: small;
+    color: var(--bgColor);
+}
+
+.sosmed a{
+    color: var(--bgColor);
+}
+
+.image {
+    width: 55%;
+    height: 100%;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 420px){
+    .container {
+        border-radius: 0;
+        flex-direction: column-reverse;
+        height: auto;
+        overflow: scroll;
+        margin-top: 4rem;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .bg-army {
+        background-color: white;
+    }
+    .logo {
+        position: absolute;
+        top: 0;
+        left: -2rem;
+        width: calc(100% + 2rem);
+        display: flex;
+        justify-content: center;
+        height: 4rem;
+        padding: 1rem;
+        background-color: #355b3e;
+    }
+    
+    .logo > p {
+        font-size: 16px;
+    }
+      
+    .logo > * {
+        color: white;
+        filter: brightness(0) invert(1);
+    }
+    
+    .image {
+        width: 100%;
+        height: 20%;
+    }
+    .login {
+        max-width: 100%;
+        height: 100%;
+    }
+    .form-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
