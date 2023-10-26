@@ -1,0 +1,188 @@
+body {
+    background-color: rgb(194, 246, 246);
+}
+
+.logo-1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    max-width: 100%;
+    width: 400px;
+    text-align: center;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card h3 {
+    margin-left: 80px;
+}
+
+.card h3 span {
+    color: red
+}
+
+.bck-1 {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.profile {
+    width: 90px;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+}
+
+.card h2 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.form-1 {
+    text-align: left;
+}
+
+label {
+    margin-top: 10px;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: left;
+}
+
+button {
+    background: #e42525;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.form-1 .forgot-password {
+    margin-bottom: 10px;
+    margin-left: 150px;
+}
+
+button:hover {
+    background: #8b0808;
+}
+
+.button-2 {
+    flex: 1;
+    /* Membagi ruang secara merata di antara tombol-tombol */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.login-new {
+    background-color: rgb(28, 21, 82);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login-new:hover {
+    background-color: #533de0;
+}
+
+.sign-up {
+    border: 2px solid rgb(145, 19, 19);
+    background-color: white;
+    color: rgb(145, 19, 19);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sign-up:hover {
+    background-color: rgb(145, 19, 19);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        padding: 15px;
+        top: 69%;
+    }
+
+    .logo-1 {
+        width: 100%;
+        height: auto;
+        top: 5%;
+    }
+
+    .profile {
+        left: 5%;
+        top: 15%;
+    }
+
+    .form-1 .forgot-password {
+        position: absolute;
+        right: 9%;;
+    }
+
+    #password {
+        padding-right: 100px; 
+    }
+}
+
+.password-container {
+    position: relative;
+}
+
+#password {
+    padding-right: 85px; 
+}
+
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.button-login {
+    margin-top: 20px;
+}
