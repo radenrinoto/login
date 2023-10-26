@@ -29,6 +29,11 @@ ol {
   list-style: none;
 }
 
+/* LAYOUT */
+.layout {
+  padding: 25px;
+}
+
 /* BUTTON CUSTOM */
 .btn {
   display: flex;
@@ -42,18 +47,18 @@ ol {
   cursor: pointer;
 }
 
-.primary {
+.btnPrimary {
   background-color: var(--secondary-color);
   color: white;
 }
 
-.secondary {
+.btnSecondary {
   background-color: white;
   border: 1px solid var(--secondary-color);
   color: var(--secondary-color);
 }
 
-.button__container {
+.buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,10 +77,6 @@ ol {
   font-weight: 400;
 }
 
-.layout {
-  padding: 25px;
-}
-
 .label {
   color: var(--primary-color);
   font-size: var(--desc-size);
@@ -83,18 +84,24 @@ ol {
 }
 
 /* illustration */
-.illustration-mobile {
+.illustrationMobile {
   width: 100%;
   background-position: center;
   background-size: cover;
 }
 
+/* WRAPPER */
 .wrapper {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
+.wrapper__img {
+  display: none;
+}
+
+/* FORM  */
 .form {
   margin: 20px 0;
   display: flex;
@@ -102,7 +109,7 @@ ol {
   gap: 25px;
 }
 
-.input__container {
+.form__input {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -120,44 +127,8 @@ ol {
   caret-color: var(--secondary-color);
 }
 
-/* REMEMBER PASSWORD */
-.remember-password {
-  display: flex;
-  justify-content: space-between;
-}
-
-.remember-checkbox:checked {
-  background-color: var(--primary-color);
-}
-
-.remember-label {
-  font-weight: 400;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  margin-top: 40px;
-}
-
-.footer__title {
-  color: var(--primary-color);
-}
-
-.footer__container-links {
-  display: flex;
-  gap: 30px;
-}
-
-/* LOGO */
-.logo_travalizer {
-  display: none;
-}
-
 /* INPUT PASSWORD */
-.input__password-container {
+.form__inputPassword {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -179,19 +150,54 @@ ol {
   caret-color: var(--primary-color);
 }
 
+/* REMEMBER PASSWORD */
+.rememberPassword {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rememberPassword__checkbox:checked {
+  background-color: var(--primary-color);
+}
+
+.rememberPassword__label {
+  font-weight: 400;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.footer__title {
+  color: var(--primary-color);
+}
+
+.footer__links {
+  display: flex;
+  gap: 30px;
+}
+
 @media screen and (min-width: 1024px) {
   .container {
     display: flex;
     flex-direction: row-reverse;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.5);
   }
 
-  .logo_travalizer {
+  .wrapper__img {
     display: block;
     width: 216px;
     margin-bottom: 50px;
   }
 
-  .layout-main {
+  .layout_main {
     background-color: var(--primary-color);
     display: flex;
     justify-content: center;
@@ -199,19 +205,13 @@ ol {
     height: 100vh;
   }
 
-  .container {
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.5);
-  }
-
-  .illustration-mobile {
-    background-color: var(--bg-illust);
-    border-radius: 0px 20px 20px 0;
-  }
-
   .layout {
     height: 100%;
     padding: 40px 65px;
+  }
+
+  .illustrationMobile {
+    background-color: var(--bg-illust);
+    border-radius: 0px 20px 20px 0;
   }
 }

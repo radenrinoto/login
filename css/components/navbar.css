@@ -1,4 +1,4 @@
-.navbar-mobile {
+.navbar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,8 +6,11 @@
   padding: 30px 0;
 }
 
+.navbar__img {
+}
+
 @media screen and (min-width: 1024px) {
-  .navbar-mobile {
+  .navbar {
     display: none;
   }
 }

@@ -19,62 +19,60 @@
     <title>Travalizer - APP</title>
   </head>
   <body>
-    <main class="layout-main">
+    <main class="layout_main">
       <!-- NAVBAR-MOBILE -->
-      <nav class="navbar-mobile">
-        <img
-          src="/assets/logo_travalizer.svg"
-          alt="logo-travalizer"
-          class="logo_travalizer-mobile"
-        />
+      <nav class="navbar">
+        <img src="/assets/logo_travalizer.svg" alt="logo-travalizer" class="navbar__img" />
       </nav>
       <div class="container">
         <!-- image -->
-        <img src="/assets/illustration-mobile.svg" alt="Illustration" class="illustration-mobile" />
+        <img src="/assets/illustration-mobile.svg" alt="Illustration" class="illustrationMobile" />
         <!-- headers -->
         <section class="layout">
           <div class="wrapper">
             <img
               src="/assets/logo_travalizer_green.svg"
               alt="logo-travalizer"
-              class="logo_travalizer"
+              class="wrapper__img"
             />
-            <h1 class="title">Artificial Intelligence giving you travel recommendations</h1>
-            <p class="desc">Welcome Back, Please login to your account</p>
+            <h1 class="wrapper__title title">
+              Artificial Intelligence giving you travel recommendations
+            </h1>
+            <p class="wrapper__desc desc">Welcome Back, Please login to your account</p>
           </div>
-          <!-- input -->
+          <!-- FORM -->
           <form class="form">
-            <div class="input__container">
+            <div class="form__input">
               <label class="label">E-mail</label>
               <input type="text" class="input__custom" />
             </div>
-            <div class="input__container">
+            <div class="form__input">
               <label class="label">Password</label>
-              <div class="input__password-container">
+              <div class="form__inputPassword">
                 <input id="passwordField" type="password" class="input__password-custom" />
                 <i class="fa fa-eye" id="toggleButton" onclick="togglePasswordVisibility()"></i>
               </div>
             </div>
             <!-- remember me & forgot password -->
-            <div class="remember-password">
+            <div class="rememberPassword">
               <!-- remember me -->
               <div>
-                <input type="checkbox" id="remember-me" class="remember-checkbox" />
-                <label class="label remember-label">Remember me</label>
+                <input type="checkbox" id="remember-me" class="rememberPassword__checkbox" />
+                <label class="label rememberPassword__label">Remember me</label>
               </div>
               <!-- forgot password -->
               <a href="">Forgot Password ? </a>
             </div>
             <!-- LOGIN & SIGN UP -->
-            <div class="button__container">
-              <button class="btn primary">Login</button>
-              <button class="btn secondary">Sign Up</button>
+            <div class="buttons">
+              <button class="btn btnPrimary">Login</button>
+              <button class="btn btnSecondary">Sign Up</button>
             </div>
           </form>
           <!-- FOOTER -->
           <div class="footer">
             <p class="footer__title">or, login with</p>
-            <div class="footer__container-links">
+            <div class="footer__links">
               <a href="">Facebook</a>
               <a href="">Linked In</a>
               <a href="">Google</a>
