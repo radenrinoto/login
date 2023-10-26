@@ -1,0 +1,10 @@
+@media only screen and (max-width: 728px) {
+  .header {
+    display: none;
+  }
+  .headerMob {
+    display: block;
+    width: 100px;
+    height: 100px;
+  }
+}
