@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/medium.css" />
+    <link rel="stylesheet" href="./assets/css/small.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Login Page Travelizer</title>
+  </head>
+  <body>
+    <main>
+      <section id="login-page">
+        <div class="login-box">
+          <div class="login-form-container">
+            <div id="logo-container">
+              <img src="./assets/image/Travalizer.png" />
+              <h3>Travelizer</h3>
+            </div>
+            <h4>Artificial Intelligence giving you travel recommendations</h4>
+            <p>Welcome Back, Please login to your account</p>
+            <form action="#">
+              <label for="email">Email</label>
+              <input type="text" placeholder="E-Mail" name="email" id="email" />
+              <label for="password">Password</label>
+              <div class="password-container">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  name="password"
+                  id="password"
+                />
+                <div class="show-pass">
+                  <i class="fa-solid fa-eye" onclick="showPassword()"></i>
+                </div>
+              </div>
+              <div id="after-form-input">
+                <div class="checkbox-container">
+                  <input type="checkbox" id="checkbox" name="checkbox" />
+                  <label for="checkbox">Remember me</label>
+                </div>
+                <div id="forgot-pass-button">
+                  <a href="#">Forgot Password?</a>
+                </div>
+              </div>
+              <div class="button-container">
+                <button id="login-button">Login</button>
+                <button id="signup-button">Signup</button>
+              </div>
+              <div class="another-button-container">
+                <p>Or, login with</p>
+                <div class="sosial">
+                  <a href="#">Facebook</a>
+                  <a href="#">Linked In</a>
+                  <a href="#">Google</a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="image">
+            <img src="./assets/image/Illustration.png" />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+<script>
+  function showPassword() {
+    const inputPassword = document.getElementById("password");
+    if (inputPassword.type === "password") {
+      inputPassword.type = "text";
+    } else {
+      inputPassword.type = "password";
+    }
+  }
+</script>
