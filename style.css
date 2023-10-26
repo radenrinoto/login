@@ -1,0 +1,225 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Basic styles for the entire page */
+body {
+  font-family: Inter;
+  background: #355B3E;
+  color: #355B3E;
+  min-height: 100vh;
+  padding: 11rem 16rem;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  overflow: hidden;
+  max-width: 75rem;
+  border-radius: 1.5rem;
+  background: #FFF;
+  box-shadow: 0 4.5rem 5rem -3rem #223A28;
+}
+
+.login-container {
+  width: 35rem;
+  padding: 2.5rem 4rem;
+}
+
+.title-app {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title-app svg {
+  fill: #355B3E;
+}
+
+.app-name {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 32px */
+}
+
+h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 36px */
+  margin-top: 1.5rem;
+}
+
+p {
+  color: #58745E;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 16px */
+  margin-top: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-self: stretch; 
+}
+
+label {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 16px */
+}
+
+input {
+  border-radius: 0.5rem;
+  border: 1px solid #B8D6BF;
+  color: #355B3E; 
+  padding: 1rem;
+  outline: none;
+  align-self: stretch;
+  margin-left: 1px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+input:focus {
+  border-color: #029664;
+}
+
+.form-extra {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.form-remember {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+label[for="remember-me"] {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 16px */
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  accent-color: #029664;
+  cursor: pointer;
+}
+
+.form-extra a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%; /* 16px */
+  color: #355B3E;
+}
+
+button {
+  flex: 1 0 0;
+  margin-left: 1px;
+  margin-right: 1px;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: 1px solid #029664;
+  background: #029664;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 16px */ 
+  cursor:pointer;
+}
+
+.sign-up {
+  flex: 1 0 0;
+  margin-left: 1px;
+  margin-right: 1px;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: 1px solid #029664;
+  background: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 16px */ 
+  cursor: pointer;
+}
+
+.footer {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 100%; /* 16px */
+  margin-top: 1.5rem;
+}
+
+.footer p {
+  color: #58745E;
+  font-weight: 400;
+  margin: 0;
+}
+
+.footer .apps {
+  color: #355B3E; 
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+}
+
+.footer .app {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.desktop-image {
+  flex-grow: 1;
+  background: #F5DBC4;
+  padding: 10rem 8rem;
+}
+
+.desktop-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.mobile-image {
+  background: #F5DBC4;
+  padding: 2rem 6rem;
+  display: none;
+}
+
+.mobile-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}

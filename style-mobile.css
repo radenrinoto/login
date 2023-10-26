@@ -1,0 +1,54 @@
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  .container {
+    min-height: 100vh;
+    border-radius: 0;
+  }
+
+  .login-container {
+    padding: 0;
+  }
+
+  .title-app {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+    background-color: #355B3E;
+    color: #FFF;
+  }
+
+  .title-app svg {
+    fill: #FFF;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+  }
+
+  .login-subcontainer {
+    padding: 0.75rem 1.5rem;
+  }
+
+  .footer {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .footer p {
+    margin: auto;
+  }
+
+  .footer .apps {
+    justify-content: space-around;
+  }
+}
