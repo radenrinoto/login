@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="icon" href="./assets/images/logo.svg" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="image__container">
+        <div class="image__wrapper">
+          <div class="image__list">
+            <img src="./assets/images/rectangle-6.svg" alt="image row" />
+            <img src="./assets/images/rectangle-9.svg" alt="image row" />
+            <img src="./assets/images/rectangle-12.svg" alt="image row" />
+          </div>
+          <div class="image__list">
+            <img src="./assets/images/rectangle-7.svg" alt="image row" />
+            <img src="./assets/images/rectangle-10.svg" alt="image row" />
+            <img src="./assets/images/rectangle-13.svg" alt="image row" />
+          </div>
+          <div class="image__list">
+            <img src="./assets/images/rectangle-8.svg" alt="image row" />
+            <img src="./assets/images/rectangle-11.svg" alt="image row" />
+            <img src="./assets/images/rectangle-14.svg" alt="image row" />
+          </div>
+        </div>
+      </section>
+      <section class="form__container">
+        <div class="banner__image__login">
+          <img src="./assets/images/rectangle-14.svg" alt="" />
+        </div>
+
+        <div class="content__wrapper">
+          <!-- brand -->
+          <div>
+            <img src="./assets/images/brand.svg" alt="brand" />
+          </div>
+          <p class="description__login">
+            A new way to experience real state in the infinite virtual space.
+          </p>
+          <form action="#" class="form__login">
+            <h1>Login</h1>
+            <div class="input__form">
+              <label for="email">Email</label>
+              <input type="email" placeholder="robert.langster@gmail.com" />
+            </div>
+            <div class="input__form">
+              <label for="password">Password</label>
+              <input id="password" type="password" placeholder="••••••••" />
+              <button id="togglePassword">
+                <img src="./assets/images/eye-password.svg" alt="eye" />
+              </button>
+            </div>
+            <div class="forgot__wrap">
+              <label>
+                <input type="checkbox" checked="checked" name="remember" />
+                Remember me
+              </label>
+              <a href="#">Forgot Password?</a>
+            </div>
+            <div class="login__btn">
+              <button>Login</button>
+              <a href="#">Sign Up</a>
+            </div>
+            <p class="question__login">Or, login with</p>
+            <div class="list__login">
+              <button>Facebook</button>
+              <button>Linke In</button>
+              <button>Google</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
