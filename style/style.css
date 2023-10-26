@@ -248,6 +248,8 @@ body {
   }
   .headerMob {
     display: block;
+    overflow: hidden;
+    width: 100vw;
   }
   .content {
     width: 100%;
