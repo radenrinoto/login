@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/components/navbar.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Travalizer - APP</title>
+  </head>
+  <body>
+    <main class="layout-main">
+      <!-- NAVBAR-MOBILE -->
+      <nav class="navbar-mobile">
+        <img
+          src="/assets/logo_travalizer.svg"
+          alt="logo-travalizer"
+          class="logo_travalizer-mobile"
+        />
+      </nav>
+      <div class="container">
+        <!-- image -->
+        <img src="/assets/illustration-mobile.svg" alt="Illustration" class="illustration-mobile" />
+        <!-- headers -->
+        <section class="layout">
+          <div class="wrapper">
+            <img
+              src="/assets/logo_travalizer_green.svg"
+              alt="logo-travalizer"
+              class="logo_travalizer"
+            />
+            <h1 class="title">Artificial Intelligence giving you travel recommendations</h1>
+            <p class="desc">Welcome Back, Please login to your account</p>
+          </div>
+          <!-- input -->
+          <form class="form">
+            <div class="input__container">
+              <label class="label">E-mail</label>
+              <input type="text" class="input__custom" />
+            </div>
+            <div class="input__container">
+              <label class="label">Password</label>
+              <div class="input__password-container">
+                <input id="passwordField" type="password" class="input__password-custom" />
+                <i class="fa fa-eye" id="toggleButton" onclick="togglePasswordVisibility()"></i>
+              </div>
+            </div>
+            <!-- remember me & forgot password -->
+            <div class="remember-password">
+              <!-- remember me -->
+              <div>
+                <input type="checkbox" id="remember-me" class="remember-checkbox" />
+                <label class="label remember-label">Remember me</label>
+              </div>
+              <!-- forgot password -->
+              <a href="">Forgot Password ? </a>
+            </div>
+            <!-- LOGIN & SIGN UP -->
+            <div class="button__container">
+              <button class="btn primary">Login</button>
+              <button class="btn secondary">Sign Up</button>
+            </div>
+          </form>
+          <!-- FOOTER -->
+          <div class="footer">
+            <p class="footer__title">or, login with</p>
+            <div class="footer__container-links">
+              <a href="">Facebook</a>
+              <a href="">Linked In</a>
+              <a href="">Google</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="js/index.js"></script>
+  </body>
+</html>
