@@ -68,8 +68,10 @@
   }
   .join {
     background-color: white;
-    border-radius: 20% 20% 0 0;
+    border-radius: 15% 15% 0 0;
     width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-bottom: 2rem;
     margin-top: 12rem;
   }
