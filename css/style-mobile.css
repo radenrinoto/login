@@ -1,0 +1,224 @@
+@media screen and (max-width: 576px) {
+    
+    .container-left{
+        display: none;
+    }
+    
+
+    .container-left-mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-image: url('../assets/img/Rectangle9.png'); */
+        width: 800px;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    .container-left-mobile img{
+        width: 800px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container-right{
+        height: 100vh;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 5%;
+    }
+    .logo{
+        display: flex;
+        flex-direction: row;
+        margin-top: 3rem;
+    }
+    .nama-logo{
+        font-family: Inter;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%; /* 2rem */
+        text-align: left;
+    }
+
+    .desc{
+        color: #3E334E;
+        font-family: Inter;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        margin-bottom: 2rem;
+    }
+
+    .title-login{
+        color: #3E334E;
+        font-family: Inter;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%; /* 1.5rem */
+    }
+    .form-login{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        /* width: 100%; */
+        /* margin: auto; */
+    }
+    .label-form-login{
+        color: #3E334E;
+        font-family: Inter;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    .email, .password {
+        font-family: "Inter";
+        font-size: 16px;
+        width: 100%;
+        height: 56px;
+        box-sizing: border-box;
+        border-radius: 0.5rem;
+        border: 1px solid #AFA2C3;
+        background: rgba(255, 255, 255, 0.00);
+        justify-content: start;
+    }
+    .email::placeholder, .password::placeholder {
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #3E334E;;
+    }
+
+    .remember-and-forgot{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: right;
+        color: #3E334E;;
+    }
+
+    .remember-label{
+        font-size: 14px;
+    }
+
+    .forgot-password{
+        font-size: 14px;
+    }
+
+    .password-area{
+        width: 100%;
+        height: min-content;
+        /* background-color: pink; */
+    }
+    
+    .password-toggle i{
+        position: relative;
+        top: -30px;
+        right: -350px;
+        transform: translate(0, -50%);
+        cursor: pointer;
+    }
+
+    .list-button{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .btn-login{
+        width: 45%;
+        height: 45px;
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: center;
+        background: #3E334E;;
+        color: white;
+        border-radius: 8px;
+        border: none;
+    }
+
+    .btn-signup{
+        width: 45%;
+        height: 45px;
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: center;
+        border: 1px solid #3E334E;;
+        background-color: white;
+        color: #3E334E;;
+        border-radius: 8px;
+    }
+
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .bottom-text{
+        font-family: "Inter";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #3E334E;;
+    }
+
+    .sosmed{
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+        justify-content: center;
+    }
+
+    .bottom-sosmed{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 130px;
+        height: 25px;
+        font-family: "Inter";
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #3E334E;;
+        border: 1px solid rgba(175, 162, 195, 1);
+        border-radius: 5px;
+    }
+}
+
+
