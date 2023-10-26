@@ -239,6 +239,9 @@ body {
   font-size: 14px;
   color: #3e334e;
 }
+.pointer {
+  cursor: pointer;
+}
 @media only screen and (max-width: 728px) {
   body {
     display: block;
