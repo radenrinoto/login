@@ -38,7 +38,11 @@
                   id="password"
                 />
                 <div class="show-pass">
-                  <i class="fa-solid fa-eye" onclick="showPassword()"></i>
+                  <i
+                    id="icon-show-pass"
+                    class="fa-regular fa-eye"
+                    onclick="showPassword()"
+                  ></i>
                 </div>
               </div>
               <div id="after-form-input">
@@ -75,10 +79,13 @@
 <script>
   function showPassword() {
     const inputPassword = document.getElementById("password");
+    const icon = document.getElementById("icon-show-pass");
     if (inputPassword.type === "password") {
       inputPassword.type = "text";
+      icon.className = "fa-regular fa-eye-slash";
     } else {
       inputPassword.type = "password";
+      icon.className = "fa-regular fa-eye";
     }
   }
 </script>
