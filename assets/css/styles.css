@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Inter:wght@100;300;400;500;600;700&family=Sora:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  background: #f8f4f2;
+}
+
+header {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 40%;
+  padding: 2rem 8rem;
+}
+
+.logo h1 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.auth {
+  display: flex;
+  width: 60%;
+  gap: 2rem;
+  padding: 1.5rem 4rem;
+}
+
+.auth p {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.password {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.password a {
+  color: black;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-text {
+  width: 18rem;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #c1a28b;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-button {
+  text-align: center;
+  background: linear-gradient(270deg, #fb6564 0%, #a03cea 100%);
+  padding: 0.8rem 4rem;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  color: white;
+  border-radius: 8px;
+  transition: opacity 0.2s;
+  text-decoration: none;
+}
+
+.main-button:hover {
+  opacity: 0.75;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  padding: 6rem 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.heading-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.heading-left h1 {
+  font-family: Sora;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.heading-left p {
+  font-family: Sora;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.recent-logins {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.recent-logins p {
+  font-family: Sora;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.users {
+  display: flex;
+  gap: 1rem;
+}
+
+.user-cards {
+  border: 1px solid #c1a28b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  border-radius: 16px;
+  gap: 16px;
+}
+
+.user-cards p {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.add-account {
+  background: #f1eae4;
+}
+
+.add-account img {
+  border-radius: 100%;
+}
+
+.add-account p {
+  background: #f1eae4;
+}
+
+.heading-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.heading-right h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.heading-right p {
+  font-family: Sora;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: start;
+}
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 75%;
+}
+
+.sign-up p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.social-media {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-media a {
+  border: 1px solid #afa2c3;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #3e334e;
+  padding: 0.5rem;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+}
+
+.social-media a:hover {
+  background: linear-gradient(270deg, #fb6564 0%, #a03cea 100%);
+  color: white;
+}
+
+footer {
+  background: linear-gradient(270deg, #fb6564 0%, #a03cea 100%);
+  width: 100%;
+  height: 97px;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/mobile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Design Guild</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./assets/images/logo.png" alt="" />
+        <h1>Design Guild</h1>
+      </div>
+      <div class="auth">
+        <div class="email">
+          <p>Email</p>
+          <input
+            type="email"
+            placeholder="johndoe@example.com"
+            class="input-text"
+          />
+        </div>
+        <div class="password">
+          <p>Password</p>
+          <div class="input-container">
+            <input type="password" class="input-text" id="passwordField" />
+            <i class="fa-regular fa-eye eye-icon" id="togglePassword"></i>
+          </div>
+          <a href="#">Forgot Password?</a>
+        </div>
+        <div class="login">
+          <p></p>
+          <a href="#" class="main-button">Login</a>
+          <p></p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="grid-item welcome">
+        <div class="content">
+          <div class="heading-left">
+            <h1>Welcome to Design Guild</h1>
+            <p>Join the world’s largest community for designers</p>
+          </div>
+          <div class="recent-logins">
+            <p>Recent Logins</p>
+            <div class="users">
+              <div class="user-cards">
+                <img src="assets/images/avatar1.png" alt="" />
+                <p>Aliana Hepburn</p>
+              </div>
+              <div class="user-cards">
+                <img src="assets/images/avatar2.png" alt="" />
+                <p>Andrew Pochink</p>
+              </div>
+              <div class="user-cards add-account">
+                <img src="assets/images/add-account.png" alt="" />
+                <p>Add Account</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item join">
+        <div class="content">
+          <div class="heading-right">
+            <h1>
+              Join our <br />
+              community today
+            </h1>
+            <p>Get connected, find designers to start a project</p>
+          </div>
+          <div class="sign-up">
+            <a href="#" class="main-button">Sign Up</a>
+
+            <p>Or, login with</p>
+            <div class="social-media">
+              <a href="#">Facebook</a>
+              <a href="#">Linked In</a>
+              <a href="#">Google</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script>
+      const passwordField = document.getElementById('passwordField');
+      const togglePassword = document.getElementById('togglePassword');
+      let isPasswordVisible = false;
+
+      togglePassword.addEventListener('click', function () {
+        isPasswordVisible = !isPasswordVisible;
+        if (isPasswordVisible) {
+          passwordField.type = 'text';
+          togglePassword.classList.remove('fa-eye');
+          togglePassword.classList.add('fa-eye-slash');
+        } else {
+          passwordField.type = 'password';
+          togglePassword.classList.remove('fa-eye-slash');
+          togglePassword.classList.add('fa-eye');
+        }
+      });
+    </script>
+  </body>
+</html>

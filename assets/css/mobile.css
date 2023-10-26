@@ -1,0 +1,82 @@
+@media (max-width: 576px) {
+  html {
+    background: linear-gradient(270deg, #fb6564 0%, #a03cea 100%);
+  }
+
+  body {
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #fb6564 0%, #a03cea 100%);
+  }
+
+  header {
+    flex-direction: column-reverse;
+    background-color: white;
+  }
+
+  .logo {
+    position: absolute;
+    z-index: 10;
+    color: white;
+    top: 3rem;
+    left: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  .logo img {
+    filter: brightness(0) invert(1);
+  }
+  .welcome {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+
+  .auth {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+  }
+  .email {
+    width: 100%;
+  }
+  .password {
+    width: 100%;
+  }
+  .password a {
+    text-align: end;
+  }
+  .input-text {
+    width: 100%;
+  }
+
+  .login {
+    width: 100%;
+  }
+
+  .main-button {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+  }
+  .join {
+    background-color: white;
+    border-radius: 20% 20% 0 0;
+    width: 100%;
+    padding-bottom: 2rem;
+    margin-top: 12rem;
+  }
+  .sign-up {
+    width: 100%;
+  }
+  .social-media a {
+    width: 100%;
+  }
+}
