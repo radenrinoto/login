@@ -1,0 +1,21 @@
+/* When screen width is 700px or below */
+@media screen and (max-width: 700px) {
+    .left-side {
+        display: none !important; /* Hide the left-side */
+    }
+
+    .right-side {
+        flex: 1 ;  /* Let it take the entire width now that left-side is hidden */
+        /* background-color: yellow !important; Change color to green */
+        background: linear-gradient(white, rgba(128, 128, 128, 0.5)), url('assets/bg-hape.png') no-repeat center center;
+        background-size: 100% auto !important; 
+        background-size: cover;
+        margin: auto; /* Center the content vertically and horizontally */
+        width: 100%; /* Take the full width */
+        height: 100vh; /* Take the full viewport height */
+        /* border: 10px solid black; */
+        display: flex; /* Using flex to center content within it */
+        align-items: center; /* Vertical centering */
+        justify-content: center; /* Horizontal centering */
+    }
+}

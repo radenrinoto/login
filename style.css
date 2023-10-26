@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.left-side {
+    /* flex: 2; Take up 3 parts of the available space */
+    width: 60%;
+    background: url('assets/bg-kiri.png') no-repeat center center;
+    background-size: cover;
+    display: flex; /* Use flexbox to center its children */
+    justify-content: center; /* Horizontally center children */
+    align-items: center; /* Vertically center children */
+}
+
+.middle-left-side {
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent background with some opacity */
+    backdrop-filter: blur(10px);  /* Apply blur effect */
+    width: 550px; /* You can adjust this value as per your needs */
+    height: 400px; /* You can adjust this value as per your needs */
+    border-radius: 1px; /* Optional: to make the box corners rounded */
+}
+
+.title h1 {
+    margin: 0; /* This will remove the default margin */
+    padding: 3px 0; /* Add some padding for a little spacing */
+}
+
+.warna-sama {
+    color: white;
+}
+
+.warna-beda {
+    color: black;
+}
+
+.title {
+    padding: 1px 1px 1px 1px; /* Adjust these values as needed */
+    text-align: left; 
+    margin-left: 60px;
+    margin-top: 80px;
+    /* background-color: aqua; */
+}
+
+.sub-title {
+    padding: 1px 1px 1px 1px;  /* Just a little space between title and subtitle */
+    text-align: left; 
+    margin-top: 10px;
+    margin-left: 60px;
+    /* background-color: blueviolet; */
+}
+
+
+.right-side {
+    /*flex: 1; */
+    width: 40%; 
+    /* background-color: white; */
+    display: flex;  /* Activates flexbox */
+    justify-content: center;  /* Centers children horizontally */
+    align-items: center;  /*Centers children vertically */
+    flex-direction: column; /* Stack children vertically */
+    height: 100vh;
+    /* width: 100vw; */
+    /* padding-bottom: 100px;
+    padding-top: 200px; */
+}
+
+.logo {
+    width: 350px;
+    height: 50px;
+    /* background-color: white; */
+    margin-top: 0px;
+    margin-bottom: 0px;  /* Space between the logo and the content */
+}
+
+/* .content {
+    width: 350px;
+    height: 300px;
+    background-color: #18d6b5;
+} */
+
+.caption-content {
+    width: 350px;
+    height: auto; /* Changed from fixed height to auto */
+    /* background-color: white; */
+    margin-bottom: 20px;  /* Added margin-bottom for spacing between this section and the login form */
+    padding: 20px;  /* Added padding for better spacing inside the box */
+}
+
+.wrap {
+    margin-top: 20px;
+}
+
+
+.title-caption h2 {
+    margin-top: 0; /* Removed the large margin */
+    margin-bottom: 10px; /* Added bottom margin for spacing */
+}
+
+.subtitle-caption p {
+    margin-top: 0; /* Removed the large margin */
+}   
+
+.login-signup {
+    width: 350px;
+    /* background-color: #ffffff; Changed from blue to white */
+    padding: 20px;   
+    margin: 20px auto; /* Centered the form on the page */
+    border-radius: 10px; /* Added to give rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Added a slight shadow for depth */
+}
+
+.input-group {
+    margin-bottom: 15px; /* Space between input fields */
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px; /* Space between label and input field */
+    font-weight: bold;  /* Made labels bold */
+}
+
+.input-group input[type="email"], .input-group input[type="password"] {
+    width: 100%;
+    padding: 10px;  /* Padding inside input fields */
+    border-radius: 5px; /* Rounded corners for input fields */
+    border: 2px solid gray; /* Border for input fields */
+    font-size: 16px; /* Font size of input text */
+}
+
+.remember-forgot {
+    display: flex;  /* Made the container flex */
+    justify-content: space-between;  /* Spaced the checkbox and link apart */
+    align-items: center;  /* Vertically aligned the checkbox and link */
+    margin-bottom: 20px;  /* Space before the buttons */
+}
+
+.button-login-signup {
+    display: flex;
+    justify-content: space-between;  /* Spaced the Login and Sign Up buttons apart */
+}
+
+.button-login-signup button.login-btn, .button-login-signup button.signup-btn {
+    padding: 10px 20px;  /* Padding inside buttons */
+    border-radius: 5px;  /* Rounded corners for buttons */
+    border: none; /* Removed borders from buttons */
+    font-size: 16px;  /* Font size of button text */
+    cursor: pointer;  /* Hand cursor on hover */
+    transition: background-color 0.3s;  /* Smooth transition for hover effect */
+}
+
+.button-login-signup button.login-btn {
+    background-color: #ff4b5c;  /* Red color for Login button */
+    color: #ffffff;  /* White text for Login button */
+}
+
+.button-login-signup button.signup-btn {
+    background-color: #f1f1f1;  /* Grey background for Sign Up button */
+    color: #333333;  /* Dark text for Sign Up button */
+    border-radius: 5%;
+    border: 1px solid black; /* Adding a light gray border */
+}
+
+.remember-forgot .input-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.social-media-login button {
+    padding: 8px 15px; /* Adjusting the padding for the buttons */
+    border: 1px solid black; /* Adding a light gray border */
+    border-radius: 5%;
+    margin-right: 15px; /* Add space to the right of each button */
+    background-color: transparent; /* Making the button background transparent */
+    cursor: pointer; /* Making the cursor a hand pointer for better UX */
+    transition: background-color 0.3s; /* Adding a smooth transition for hover effect */
+
+}
+
+.social-media-login {
+    justify-content: center !important  ; /* Horizontally center children */
+    align-items: center !important; /* Vertically center children */
+}
+
+/* Adding a hover effect to the buttons */
+.social-media-login button:hover {
+    background-color: #f0f0f0;
+}
